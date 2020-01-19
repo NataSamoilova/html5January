@@ -2,11 +2,9 @@
   max-width: 1280px;
   margin: 0 auto;
 }
-
 .padding-site {
   padding: 50px;
 }
-
 .header {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -14,19 +12,16 @@
   background-color: #445162;
   font-family: 'Open Sans', sans-serif;
 }
-
 .mainTitle {
   display: block;
   font-size: 32px;
   margin: 0 0 10px 0;
   color: #ffffff;
 }
-
 .header ul {
-  margin: 0;
+  margin: 0 0 0 40px;
   padding: 0;
 }
-
 .header ul li {
   list-style: none;
   color: #ffffff;
@@ -34,19 +29,31 @@
   line-height: 36px;
   font-family: 'Open Sans', sans-serif;
 }
-
+.productInfo__listItem {
+  position: relative;
+}
+.productInfo__listItem::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 20px;
+  background-image: url(img/check_icon.png);
+  background-repeat: no-repeat;
+  left: -35px;
+  top: 5px;
+}
 .productImg img {
   display: block;
   width: 350px;
   height: 180px;
   background-color: white;
 }
-
 .aboutProduct {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 100px;
-  
+
   font-family: 'Open Sans', sans-serif;
   color: #445161;
 }
@@ -62,48 +69,109 @@
   font-weight: 400;
   margin: 0 0 30px 0;
 }
-.productPluses{
+.productPluses {
   background-color: #f5f5f5;
   color: #445161;
   font-family: 'Open Sans', sans-serif;
 }
-.productPluses span{
+.productPluses span {
   text-align: center;
 }
-.productPluses ul{
+.productPluses ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 50px;
+  padding: 0 0 0 50px;
 }
-.productPluses ul li{
+.productPluses ul li {
   list-style: none;
 }
-.productScreenshots{
+.productPluses__listItem {
+  position: relative;
+}
+.productPluses__listItem::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(img/plusicon.jpg);
+  background-repeat: no-repeat;
+  left: -45px;
+  top: 5px;
+}
+.productScreenshots {
   color: #445161;
   font-family: 'Open Sans', sans-serif;
 }
-.productScreenshots span{
+.productScreenshots span {
   text-align: center;
 }
-.productScreenshots__descriptions{
+.productScreenshots__descriptions {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
-.productScreenshots figure{
+.productScreenshots figure {
   display: flex;
   margin: 0;
 }
-.productScreenshots figure img{
+.productScreenshots figure img {
   display: block;
   width: 200px;
   height: 150px;
   background-color: #445161;
   margin: 0 20px 0 0;
 }
-.productScreenshots figure figcaption h3{
+.productScreenshots figure figcaption h3 {
   margin: 0;
   font-size: 24px;
   font-weight: 400;
+}
+.productReviews {
+  background-color: #f5f5f5;
+  color: #445161;
+  font-family: 'Open Sans', sans-serif;
+}
+.productReviews span {
+  text-align: center;
+}
+.productReviews__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.productReviews__block__review {
+  display: flex;
+}
+.productReviews__block__review img {
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 38px;
+  margin: 0 30px 0 0;
+}
+.productReviews__block__reviewText {
+  background-color: #ebebeb;
+  border-radius: 5px;
+  position: relative;
+}
+.productReviews__block__reviewText::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #ebebeb;
+  transform: rotate(45deg);
+  left: -10px;
+  top: 27px;
+}
+.productReviews__block__reviewText blockquote{
+  margin: 10px 20px 10px 30px;
+}
+.productReviews__block__reviewText cite {
+  display: block;
+  margin: 0 0 10px 40px;
+  color: #989898;
 }
 
