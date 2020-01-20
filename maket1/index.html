@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Homework</title>
 </head>
@@ -122,7 +124,7 @@
       <section class="productReviews padding-site">
         <span class="secondTitle">Reviews</span>
         <div class="productReviews__block">
-         
+
           <div class="productReviews__block__review">
             <img src="img/Shape.jpg" alt="img">
             <div class="productReviews__block__reviewText">
@@ -133,7 +135,7 @@
               <cite>Lourens S.</cite>
             </div>
           </div>
-         
+
           <div class="productReviews__block__review">
             <img src="img/Shape.jpg" alt="img">
             <div class="productReviews__block__reviewText">
@@ -219,12 +221,44 @@
           </div>
         </div>
       </section>
-
     </main>
 
+    <footer class="footerContacts padding-site">
+      <span class="secondTitle">Contacts</span>
+      <div class="footerContacts__FormAndIcons">
+        <form class="form-area" action="index-res.html" method="POST">
+          <input type="text" name="text" placeholder="Your name:" autofocus required pattern="\S+[А-яа-я]">
+          <br>
+          <input type="email" name="email" placeholder="email@example.ru" required pattern="\S+@[a-z]+.[a-z]+">
+          <br>
+          <textarea name="text" placeholder="Your message:"></textarea>
+          <br>
+          <input type="submit" value="Send" class="button">
+        </form>
 
-    <footer></footer>
-    <footer></footer>
+        <div class="footerContacts__sotialIcons">
+          <div class="contactslist">
+            <ul>
+              <li><img src="img/skype_icon.png" alt="Skype"><span>here_your_login_skype</span></li>
+              <li><img src="img/icq_icon.png" alt="ICQ"><span>279679659</span></li>
+              <li><img src="img/email_icon.png" alt="Email"><span>psdhtmlcss@mail.ru</span></li>
+              <li><img src="img/phone_icon.png" alt="Phone"><span>80 00 4568 55 55</span></li>
+            </ul>
+            <div class="sotialIconsList">
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-goodreads"></i></a>
+              <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footerCopyright">
+      <p>Copyright &copy; 2014 Product name - PSD HTML CSS</p>
+    </footer>
   </div>
 
 </body>
