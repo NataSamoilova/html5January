@@ -43,7 +43,7 @@ body{
   display: block;
   width: 25px;
   height: 20px;
-  background-image: url(img/check_icon.png);
+  background-image: url(../img/check_icon.png);
   background-repeat: no-repeat;
   left: -35px;
   top: 5px;
@@ -58,9 +58,11 @@ body{
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 100px;
-
   font-family: 'Open Sans', sans-serif;
   color: #445161;
+}
+.aboutProduct p {
+  margin: 0 0 15px 0;
 }
 .productVideo video {
   display: block;
@@ -87,10 +89,12 @@ body{
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
   padding: 0 0 0 36px;
+  margin: 0;
 }
 .productPluses ul li {
   list-style: none;
   margin: 0 10px;
+  box-sizing: border-box;
 }
 .productPluses__listItem {
   position: relative;
@@ -101,7 +105,7 @@ body{
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url(img/plusicon.jpg);
+  background-image: url(../img/plusicon.jpg);
   background-repeat: no-repeat;
   left: -45px;
   top: 5px;
@@ -250,10 +254,11 @@ body{
   margin-left: 5%;
 }
 .buyIt-block__columns__column .button:active {
-  color: #050505;
+  outline:1px solid #000;
 }
 .buyIt-block__columns__column .button:hover {
   color: #a8a2a2;
+  outline: none;
 }
 .footerContacts{
   background-color: #445161;
@@ -314,6 +319,12 @@ body{
 }
 .footerContacts__FormAndIcons .form-area .button:active {
   border: 1px solid #333333;
+  color: #b92323;
+  outline: none;
+}
+.footerContacts__FormAndIcons .form-area .button:focus {
+  /*border: 1px solid #993434;*/
+  outline: none;
 }
 .contactslist ul{
   padding: 0;
