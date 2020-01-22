@@ -11,9 +11,9 @@ body{
   padding: 50px;
 }
 .header {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: #445162;
   font-family: 'Open Sans', sans-serif;
 }
@@ -48,11 +48,10 @@ body{
   left: -35px;
   top: 5px;
 }
-.productImg img {
+.productImg {
   display: block;
-  width: 350px;
-  height: 180px;
-  background-color: white;
+  min-width: 100px;
+  height: auto;
 }
 .aboutProduct {
   display: grid;
@@ -64,10 +63,10 @@ body{
 .aboutProduct p {
   margin: 0 0 15px 0;
 }
-.productVideo video {
+.productVideo video{
   display: block;
-  width: 300px;
-  height: 180px;
+  /*min-width: 100px;
+  height: 150px;*/
   background-color: #445162;
 }
 .secondTitle {
@@ -128,8 +127,6 @@ body{
 }
 .productScreenshots figure img {
   display: block;
-  width: 200px;
-  height: 150px;
   background-color: #445161;
   margin: 0 20px 0 0;
 }
@@ -156,6 +153,7 @@ body{
 }
 .productReviews__block__review img {
   display: block;
+  
   width: 75px;
   height: 75px;
   border-radius: 38px;
@@ -253,12 +251,13 @@ body{
   line-height: 40px;
   margin-left: 5%;
 }
-.buyIt-block__columns__column .button:active {
-  outline:1px solid #000;
-}
 .buyIt-block__columns__column .button:hover {
   color: #a8a2a2;
   outline: none;
+}
+.buyIt-block__columns__column .button:active {
+  outline:none;
+  color: #b92323;
 }
 .footerContacts{
   background-color: #445161;
@@ -312,6 +311,7 @@ body{
   margin-right: 180px;
   background-color: #ffffff;
   margin-bottom: 0;
+  padding: 0;
 }
 .footerContacts__FormAndIcons .form-area .button:hover {
   color: #899bb3;
