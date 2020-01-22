@@ -199,8 +199,7 @@ body{
   max-width: 300px;
   height: 50%;
   background-color: #445162;
-  padding-top: 16px;
-  padding-bottom: 20px;
+  padding: 16px 0 20px 0;
   border-radius: 7px;
 }
 .buyIt-block__columns__column span{
@@ -211,7 +210,7 @@ body{
   font-weight: 400;
   text-align: center;
   font-size: 24px;
-  margin-bottom: 16px;
+  margin:0 0 16px 0;
 }
 .buyIt-block__columns__column .buyIt__columnPrice {
   background-color: #ffffff;
@@ -221,14 +220,13 @@ body{
   font-size: 40px;
   font-weight: 400;
   text-align: center;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 18px 0 18px 0;
+  
 }
 .buyIt-block__columns__column ol {
-  list-style-type: none;
-  padding-left: 20px;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  list-style-position: inside;
+  margin: 20px 25px;
+  padding: 0;
 }
 .buyIt-block__columns__column ol li {
   color: #ffffff;
@@ -236,7 +234,7 @@ body{
   font-weight: 400;
   line-height: 24px;
 }
-.buyIt-block__columns__column .button {
+.buyIt-block__columns__column .BuyIt__button {
   display: inline-block;
   text-decoration: none;
   color: #445161;
@@ -251,11 +249,11 @@ body{
   line-height: 40px;
   margin-left: 5%;
 }
-.buyIt-block__columns__column .button:hover {
+.buyIt-block__columns__column .BuyIt__button:hover {
   color: #a8a2a2;
   outline: none;
 }
-.buyIt-block__columns__column .button:active {
+.buyIt-block__columns__column .BuyIt__button:active {
   outline:none;
   color: #b92323;
 }
@@ -277,29 +275,35 @@ body{
   margin:0 30px 0 0;
 }
 .footerContacts__FormAndIcons .form-area input {
+  box-sizing: border-box;
+  display: block;
   color: #030303;
   border-radius: 5px;
   width: 490px;
   height: 40px;
-  margin-bottom: 20px;
-  padding-left: 10px;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 10px;
   font-size: 16px;
   font-weight: 400;
   border: none;
+  outline: none;
 }
 .footerContacts__FormAndIcons .form-area textarea {
+  box-sizing: border-box;
+  display: block;
   color: #030303;
   border-radius: 5px;
   width: 490px;
   height: 160px;
-  margin-bottom: 20px;
-  padding-left: 10px;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 10px;
   padding-top: 10px;
   font-size: 16px;
   font-weight: 400;
   border: none;
+  outline: none;
 }
-.footerContacts__FormAndIcons .form-area .button {
+.footerContacts__FormAndIcons .form-area .submitButton {
   color: #445162;
   font-size: 16px;
   font-weight: 600;
@@ -308,39 +312,55 @@ body{
   width: 140px;
   height: 40px;
   border: none;
-  margin-right: 180px;
+  margin: 0 auto;
   background-color: #ffffff;
-  margin-bottom: 0;
   padding: 0;
 }
-.footerContacts__FormAndIcons .form-area .button:hover {
+.footerContacts__FormAndIcons .form-area .submitButton:hover {
   color: #899bb3;
   background-color: #ffffff;
+  outline: none;
 }
-.footerContacts__FormAndIcons .form-area .button:active {
+.footerContacts__FormAndIcons .form-area .submitButton:active {
   border: 1px solid #333333;
   color: #b92323;
   outline: none;
 }
-.footerContacts__FormAndIcons .form-area .button:focus {
-  /*border: 1px solid #993434;*/
-  outline: none;
+.contactslist{
+  margin: 20px 0 0 0;
 }
-.contactslist ul{
-  padding: 0;
+.contactslist span{
+  display: block;
+  text-align: start;
+  margin: 0 0 25px 40px;
+  position: relative;
 }
-.contactslist ul li{
-  list-style: none;
-  font-weight: 400;
-  line-height: 36px;
+.contactslist__icon:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 27px;
+  background-repeat: no-repeat;
+  left: -35px;
+  bottom: 1px;
 }
-.contactslist ul li img{
-  margin: 0 10px 0 0;
+.contactslist .iconSkype:before {
+  background-image: url(../img/skype_icon.png);
+}
+.contactslist .iconIcq:before {
+  background-image: url(../img/icq_icon.png);
+}
+.contactslist .iconEmail:before {
+  background-image: url(../img/email_icon.png);
+}
+.contactslist .iconPhone:before {
+  background-image: url(../img/phone_icon.png);
 }
 .sotialIconsList a {
   text-decoration: none;
   color: #ffffff;
-  margin-left: 5px;
+  margin: 0 0 0 5px;
 }
 .sotialIconsList a i {
   font-size: 40px;
