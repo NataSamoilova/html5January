@@ -1,9 +1,11 @@
 Сделано: 
 Стили необходимо переместить в папку "css".
 
+
 Сделано:
 Не забывайте обнулять не нужные margin (margin-top)
 - параграфы
+
 
 Сделано:
 Всем кнопкам необходимо добавить эффект нажатия (:active)
@@ -13,13 +15,13 @@
 У полей формы появляется оутлайн, если форма не заполнена. Если заполнена и заполнена верно, 
 то аутлайн не появляется. Если можно поменять эти свойства, то я, к сожалению, пока не знаю как.)
 
--------
-РАЗБИРАЮСЬ!!!
+
+Сделано:
 Все файлы должны быть подключены локально
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-------
+
 
 Сделано:
 Здесь лишняя обертка, достаточно добавить тегу img свойство display: block;
@@ -27,10 +29,12 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
 <img src="#" alt="img">
 </div>
 
+
 Сделано:
 Всем тегам img необходимо прописать размеры в html
 <img src="#" alt="img">
 <img src="img/screenshot.jpg" alt="img">
+
 
 Сделано:
 аналогично для тега video
@@ -49,9 +53,11 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
 <li>4. Aperiam nulla ea neque.</li>
 </ol>
 
+
 Сделано:
 Заглавный текст реализуется с помощью text-transform: uppercase;
 <a href="#" class="button">BUY</a>
+
 
 Сделано:
 Использование тега br в формах запрещено, вместо него можно использовать div или display: block;
@@ -65,6 +71,7 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
 <br>
 <input type="submit" value="Send" class="button">
 </form>
+
 
 Сделано:
 Маркированный список здесь не нужен, достаточно использовать span для текста, иконки в этом блоке декоративные, лучше всего добавить через псевдоэлемент или font-awesome
