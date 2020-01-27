@@ -1,48 +1,185 @@
 body{
-  background-color: #b6b7dd;
   box-sizing: border-box;
   margin: 0;
 }
 .container{
   background-image: url(../img/background.jpg);
   width: 670px;
-  height: 900px;
+  height: 935px;
   margin: 0 auto;
   box-sizing: border-box; 
 }
-.timeline {
-  position: relative;
+.timeline{
+  display: flex;
 }
-.timeline:before {
-  content: '';
-  display: block;
-  left: 50%;
-  width: 4px;
-  position: absolute;
-  height: 100%;
-  background: #676e8d;
+.div_width{
+  width: 335px;
+  padding: 70px 25px 0 25px;
+  box-sizing: border-box; 
 }
-.timeline_year {
-  width: 49px;
-  line-height: 49px;
-  text-align: center;
-  background: #676e8d;
-  border-radius: 100px;
+.div_width:first-child{
+  border-right: 4px solid #676e8d;
+}
+
+/*LEFT side*/
+.context-left{
   position: relative;
-  margin: 0 auto;
-  text-shadow: 0 -1px 0 rgba(22, 23, 48, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+.context_text_left{
+  margin: 0 20px 0 0;
+  box-sizing: border-box; 
+  background-color: #676e8d;
   color: #ffffff;
   font-family: "Helvetica Neue";
   font-size: 12px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px;
+  position: relative;
 }
-.timeline_section {
-  margin: 40px 0;
+.context_text_left:before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #a8608c;
+  right: -8px;
+  transform: rotate(45deg);
+}
+.context_year_left{
+  width: 49px;
+  height: 49px;
+  background-color: #676e8d;
+  color: #ffffff;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 49px;
+  position: absolute;
+  right: -26px;
+  top: 63px;
+}
+.context_dot_left{
+  width: 16px;
+  height: 16px;
+  background-color: #676e8d;
+  border-radius: 100%;
+  position: absolute;
+  right: -10px;
+  top: 80px;
+}
+/*RIGHT side*/
+.context-right{
+  position: relative;
   display: flex;
-  justify-content: center;
 }
-.timeline_item {
-  margin: 0 40px;
-  background: #fff;
-  padding: 20px;
+.context_text_right{
+  margin: 0 0 0 20px;
+  box-sizing: border-box;
+  background-color: #a8608c;
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px;
+  position: relative;
+}
+.context_text_right:before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #a8608c;
+  left: -8px;
+  transform: rotate(45deg);
+}
+.context_year_right{
+  width: 49px;
+  height: 49px;
+  background-color: #676e8d;
+  color: #ffffff;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 49px;
+  position: absolute;
+  left: -26px;
+  top: 63px;
+}
+.context_dot_right{
+  width: 16px;
+  height: 16px;
+  background-color: #676e8d;
+  border-radius: 100%;
+  position: absolute;
+  left: -10px;
+  top: 80px;
+}
+/*BLOCKS*/
+.multimedia .context_text_left{
+  background-color: #a8608c;
+}
+.multimedia .context_text_left:before{
+  background-color: #a8608c;
+}
+.pakistan .context_text_right{
+  background-color: #739ac2;
+  text-align: start;
+}
+.pakistan .context_text_right p{
+  margin: 0;
+}
+.pakistan .context_text_right:before{
+  background-color: #739ac2;
+}
+.pakistan .context_dot_right{
+  top: 95px;
+}
+.pakistan .context_text_right:before{
+  top:25px;
+}
+.internship .context_text_left{
+  background-color: #967fb5;
+}
+.internship .context_text_left:before{
+  background-color: #967fb5;
+}
+.eassr .context_text_right{
+  text-transform: none;
+  background-color: #7e9874;
+}
+.eassr .context_text_right:before{
+  background-color: #7e9874;
+}
+.inlove .context_text_left{
+  background-color: #cd3737;
+}
+.inlove .context_text_left:before{
+  background-color: #cd3737;
+}
+.college .context_text_right{
+  background-color: #3d999d;
+}
+.college .context_text_right:before{
+  background-color: #3d999d;
+}
+.school .context_text_left{
+  background-color: #967fb5;
+}
+.school .context_text_left:before{
+  background-color: #967fb5;
+}
+.ageofborn .context_text_right{
+  background-color: #676e8d;
+}
+.ageofborn .context_text_right:before{
+  background-color: #676e8d;
+}
+.ageofborn .div_width{
+  padding-bottom: 33px;
 }
