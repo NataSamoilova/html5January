@@ -63,12 +63,6 @@ body{
 .aboutProduct p {
   margin: 0 0 15px 0;
 }
-.productVideo video{
-  display: block;
-  /*min-width: 100px;
-  height: 150px;*/
-  background-color: #445162;
-}
 .secondTitle {
   display: block;
   font-size: 30px;
