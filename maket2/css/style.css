@@ -57,11 +57,14 @@ header {
 .header-nav ul a {
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
 }
 .header-nav ul a:hover {
   color: #c7b299;
+}
+.header-nav ul a:active {
+  color: #ec7a08;
 }
 .btn-cart {
   width: 24px;
@@ -100,10 +103,58 @@ input[type="search"]:focus {
   flex-direction: column;
   justify-content: space-between;
 }
+.header-context .slider-arrow {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  min-height: 550px;
+  width: 40px;
+  height: 73px;
+  position: relative;
+}
+.slider-arrow__right:after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: -36px;
+  margin: 60px 0 0 15px;
+  box-sizing: border-box;
+}
+.slider-arrow__left:after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
+  transform: rotate(-130deg);
+  position: absolute;
+  top: 10px;
+  left: -5px;
+  margin: 60px 0 0 15px;
+  box-sizing: border-box;
+}
+.slider-arrow:hover:after {
+  border-top: 2px solid #9d9da0;
+  border-right: 2px solid #9d9da0;
+}
+.slider-arrow:active:after {
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
 .header-context__text {
-  max-width: 630px;
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
 }
 .h2 {
   display: block;
@@ -135,6 +186,12 @@ input[type="search"]:focus {
   background-color: #998675;
   border-radius: 3px;
   margin: 15px 0 0 0;
+}
+.header-context__text .btn-start:hover {
+  background-color: #9d9da0;
+}
+.header-context__text .btn-start:active {
+  color: #524848;
 }
 .pagination {
   width: 150px;
