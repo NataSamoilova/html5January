@@ -156,13 +156,13 @@ input[type="search"]:focus {
   display: flex;
   justify-content: space-between;
 }
-.h2{
+.span-h2{
   display: block;
   font-size: 36px;
   font-family: Releway, sans-serif;
   font-weight: 500;
 }
-.h1{
+.span-h1{
   display: block;
   font-size: 52px;
   font-family: Releway, sans-serif;
@@ -212,4 +212,49 @@ input[type="search"]:focus {
   background-color: transparent;
   border: 2px solid #c7b299;
   transform: scale(1.2);
+}
+/*Main*/
+/*Services*/
+
+.services{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  color: #555555;
+}
+.services-block{
+  height: 235px;
+  width: 235px;
+  padding: 0 10px;
+}
+.services-block span{
+  display: block;
+}
+.services-block .span-small-header{
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 15px 0;
+}
+.services-block p{
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+.services-block .services-inblock-line{
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin: 20px auto 0;
+}
+.services-block:hover .services-inblock-line{
+  background-color: #c7b299;
+}
+.services-block:hover .span-small-header{
+  color: #c7b299;
 }
