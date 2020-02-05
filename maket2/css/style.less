@@ -27,7 +27,6 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 181px;
   text-decoration: none;
   background-color:transparent;
   color: #fff;
@@ -45,25 +44,21 @@ header{
 .logo:hover{
   color: #998675;
 }
-.header-nav ul{
-    display: flex;
-    margin: 0;
+.logo:active{
+  color: #ec7a08;
 }
-.header-nav ul li{
-  list-style: none;
-  margin: 0;
+.header-nav .menu a{
+  display: inline-block;
   padding: 20px 15px 0 15px;
-}
-.header-nav ul a{
   text-decoration: none;
   color: #fff;
   font-size: 16px;
   font-weight: 300;
 }
-.header-nav ul a:hover{
+.header-nav a:hover{
   color: #c7b299;
 }
-.header-nav ul a:active{
+.header-nav a:active{
   color: #ec7a08;
 }
 .btn-cart{
@@ -228,6 +223,7 @@ input[type="search"]:focus {
   height: 235px;
   width: 235px;
   padding: 0 10px;
+  position: relative;
 }
 .services-block span{
   display: block;
@@ -239,22 +235,29 @@ input[type="search"]:focus {
   margin: 15px 0;
 }
 .services-block p{
-  margin: 0;
+  margin: 0 0 20px 0;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   color: #8c8c8c;
 }
-.services-block .services-inblock-line{
+.services-block:after{
+  content: "";
+  display: block;
   width: 70px;
   height: 3px;
   background-color: #f1eee9;
-  margin: 20px auto 0;
-}
-.services-block:hover .services-inblock-line{
-  background-color: #c7b299;
+  left:0;
+  right: 0;
+  margin: 0 auto;
 }
 .services-block:hover .span-small-header{
   color: #c7b299;
+}
+.services-block:hover svg{
+  fill: #c7b299;
+}
+.services-block:hover:after{
+  background-color: #c7b299;
 }
