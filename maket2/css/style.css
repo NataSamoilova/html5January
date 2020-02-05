@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 181px;
+  /*width: 181px;*/
   text-decoration: none;
   background-color: transparent;
   color: #fff;
@@ -44,6 +44,9 @@ header {
 }
 .logo:hover {
   color: #998675;
+}
+.logo:active {
+  color: #ec7a08;
 }
 .header-nav ul {
   display: flex;
