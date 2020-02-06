@@ -354,17 +354,17 @@ input[type="search"]:focus {
   box-sizing: border-box;
   margin: 0 auto;
 }
-.projects .projects-btn {
+.projects-buttons .projects-btn {
   text-transform: capitalize;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   color: #8c8c8c;
 }
-.projects .projects-btn:hover {
+.projects-buttons .projects-btn:hover {
   background-color: #998675;
   color: #ffffff;
 }
-.projects .projects-btn:active {
+.projects-buttons .projects-btn:active {
   color: #524848;
 }
 .projects .projects-cards-block {
@@ -406,4 +406,37 @@ input[type="search"]:focus {
   line-height: 20px;
   font-weight: 300;
   color: #d1d1d1;
+}
+.projects .btn {
+  margin: 0 0 20px 0;
+}
+/*Videoblock*/
+.videoblock {
+  background: url(../img/bg-video.jpg) no-repeat center center;
+  background-position: cover;
+  width: 100%;
+  min-height: 690px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.videoblock .videoblock-title {
+  display: block;
+  color: #fff;
+  margin: 0 auto 20px auto;
+}
+.videoblock .videoblock-txt {
+  color: #fff;
+  max-width: 550px;
+  margin: 0 auto;
+}
+.videoblock .videoblock-realtime {
+  display: block;
+  margin: 30px auto 0 auto;
+  font-family: 'Montserrat', 'arial', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #c7b299;
 }
