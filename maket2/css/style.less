@@ -413,8 +413,6 @@ input[type="search"]:focus {
 }
 /*Videoblock*/
 .videoblock{
- /* background: url(../img/bg-video.jpg) no-repeat center center;
-  background-position: cover;*/
   width: 100%;
   min-height: 690px;
   box-sizing: border-box;
@@ -429,24 +427,38 @@ video{
   box-sizing: border-box;
   z-index: 1;
 }
-.videoblock .videoblock-title{
+.videoblock .videoblock-content{
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  width: 690px;
+  height: 500px;
+  z-index: 5;
+  text-align: center;
+}
+.videoblock .videoblock-content .videoblock-title{
   display: block;
+  font-family: 'Raleway', 'arial', sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
   color: #fff;
   margin: 0 auto 20px auto;
-  position: absolute;
-  z-index: 2;
 }
-.videoblock .videoblock-txt{
+.videoblock .videoblock-content .videoblock-txt{
   color: #fff;
-  max-width: 550px;
-  margin: 0 auto;
+  font-family: 'Montserrat', 'arial', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 0;
 }
-.videoblock .videoblock-realtime{
+.videoblock .videoblock-content .videoblock-realtime{
   display: block;
+  color: #c7b299;
   margin: 30px auto 0 auto;
   font-family: 'Montserrat','arial',sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #c7b299;
 }
