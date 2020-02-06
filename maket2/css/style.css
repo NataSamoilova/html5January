@@ -412,19 +412,28 @@ input[type="search"]:focus {
 }
 /*Videoblock*/
 .videoblock {
-  background: url(../img/bg-video.jpg) no-repeat center center;
-  background-position: cover;
+  /* background: url(../img/bg-video.jpg) no-repeat center center;
+  background-position: cover;*/
   width: 100%;
   min-height: 690px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+video {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 1;
 }
 .videoblock .videoblock-title {
   display: block;
   color: #fff;
   margin: 0 auto 20px auto;
+  position: absolute;
+  z-index: 2;
 }
 .videoblock .videoblock-txt {
   color: #fff;
