@@ -730,3 +730,10 @@ video {
 .clients .clientlogo:active {
   filter: brightness(0.4);
 }
+/*Footer*/
+.footer-info {
+  background-color: #191919;
+}
+.footer-copyright {
+  background-color: #111111;
+}
