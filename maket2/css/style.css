@@ -505,7 +505,8 @@ video {
   fill: #fff;
 }
 .btn-videoplay:hover .video-play-btn-icon {
-  fill: #9d9da0;
+  transition-duration: 1s;
+  transform: rotate(1turn);
 }
 .btn-videoplay:active .video-play-btn-icon {
   fill: bisque;
@@ -603,6 +604,10 @@ video {
   fill: #ffffff;
   display: block;
   margin: auto;
+}
+.statistics .statistics-post:hover .statistics-post-icon {
+  transition-duration: 1s;
+  transform: rotate(1turn);
 }
 .statistics .statistics-post .statistics-number {
   display: block;
@@ -782,9 +787,6 @@ video {
   padding: 30px 40px;
   box-sizing: border-box;
 }
-.clients .clientlogo:hover {
-  filter: brightness(0.7);
-}
 .clients .clientlogo:active {
   filter: brightness(0.4);
 }
@@ -948,4 +950,20 @@ footer .footer-copyright {
 .footer-copyright .txt-light:active,
 .footer-copyright-support .faq:active {
   color: #ec7a08;
+}
+/*Animation*/
+.pulse:hover {
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
