@@ -99,8 +99,8 @@ header {
   color: #ec7a08;
 }
 .btn-cart {
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   background-size: contain;
   background: url(../img/icon_cart.svg) center;
   background-repeat: no-repeat;
@@ -825,6 +825,7 @@ video {
   display: block;
   padding: 30px 40px;
   box-sizing: border-box;
+  width: 210px;
 }
 .clients .clientlogo:active {
   filter: brightness(0.4);
@@ -1008,7 +1009,7 @@ footer .footer-copyright {
     box-sizing: border-box;
   }
   .padding-site {
-    padding: 1em;
+    padding: 3em 1em;
   }
   /**/
   header {
@@ -1052,6 +1053,7 @@ footer .footer-copyright {
     background: url(../img/iphone-small.jpg) no-repeat;
     background-position: 5% 100%;
     min-height: 500px;
+    padding: 0 0 1em 0;
   }
   .mobiledevice .mobiledevice-content {
     margin: 0;
@@ -1069,5 +1071,91 @@ footer .footer-copyright {
   .mobiledevice .mobiledevice-content .mobiledevice-list li::before {
     left: -5px;
     top: 30%;
+  }
+  .statistics .statistics-post {
+    width: 45%;
+  }
+  .statistics .statistics-post:not(:last-child) {
+    margin: 0;
+  }
+  .recentposts-gallery {
+    max-width: 100%;
+    padding: 0;
+  }
+  .recentposts-gallery .recentposts-card {
+    margin: 20px 0 0 0;
+  }
+  .recentposts-gallery .recentposts-card:nth-child(3) {
+    margin: 20px 0;
+  }
+  .clients {
+    justify-content: space-around;
+    padding: 0 1em;
+    min-height: 200px;
+    background: url(../img/clients-bg.jpg) no-repeat center bottom;
+  }
+  .clients .clientlogo {
+    padding: 0;
+    width: 80px;
+  }
+  .clients .clientlogo img {
+    width: inherit;
+  }
+  .footer-info {
+    justify-content: space-around;
+  }
+  .footer-info .footer-info-title {
+    text-align: center;
+  }
+  .footer-info .footer-info__company {
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-info .footer-info__company .logo {
+    margin: auto;
+    outline: none;
+  }
+  .footer-info .footer-info__company .read-more-link {
+    display: block;
+    width: 100px;
+    margin: auto;
+  }
+  .footer-info .footer-info__company .read-more-link:after {
+    left: 92px;
+    top: 7px;
+  }
+  .footer-info .footer-info__blog,
+  .footer-info .footer-info__twitter {
+    width: 45%;
+    margin: 0;
+  }
+  .footer-info .footer-info__twitter-link {
+    padding: 0;
+  }
+  .footer-info .footer-info__widget {
+    width: 70%;
+  }
+  .footer-info .footer-info__widget .footer-info-title {
+    margin: auto;
+  }
+  .footer-info .footer-info__widget img {
+    margin: 10px auto;
+  }
+  .footer-copyright {
+    padding: 1em;
+  }
+  .footer-copyright .footer-copyright-support a,
+  .footer-copyright .footer-copyright-author a {
+    border: none;
+  }
+  .footer-copyright .footer-copyright-support a:nth-child(2) {
+    border-right: 1px solid #555555;
+  }
+  .footer-copyright .footer-copyright-author {
+    text-align: end;
   }
 }

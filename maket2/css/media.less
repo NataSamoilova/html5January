@@ -1,9 +1,9 @@
- @media screen and (max-width: 480px){
+@media screen and (max-width: 480px){
      *{
          box-sizing: border-box;
      }
     .padding-site{
-      padding: 1em;
+      padding: 3em 1em;
     } 
     /**/
     header{
@@ -47,6 +47,7 @@
         background: url(../img/iphone-small.jpg) no-repeat;
         background-position: 5% 100%;
         min-height: 500px;
+        padding: 0 0 1em 0;
         .mobiledevice-content {
             margin: 0;
             width: 90%;
@@ -64,5 +65,95 @@
                 }
             }
         }
+    }
+    .statistics {
+        .statistics-post{
+           width: 45%;
         }
- }
+        .statistics-post:not(:last-child){
+            margin: 0;
+        }
+    }
+    .recentposts-gallery {
+        max-width: 100%;
+        padding: 0;
+        .recentposts-card{
+            margin: 20px 0 0 0;
+        }
+        .recentposts-card:nth-child(3){
+            margin: 20px 0;
+        }
+    }
+    .clients {
+        justify-content: space-around;
+        padding: 0 1em;
+        min-height: 200px;
+        background: url(../img/clients-bg.jpg) no-repeat center bottom;
+        .clientlogo {
+           padding: 0;
+            width: 80px;
+           img{
+           width: inherit;
+          }
+        }
+    }
+    .footer-info{
+        justify-content: space-around;
+        .footer-info-title{
+            text-align: center;
+        }
+        .footer-info__company{
+            width: 100%;
+            margin: 0 0 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            .logo{
+                margin: auto;
+                outline: none;
+            }
+            .read-more-link{
+                display: block;
+                width: 100px;
+                margin: auto;
+                }
+            .read-more-link:after{
+            left: 92px;
+            top: 7px;
+            }
+        }
+        .footer-info__blog,
+        .footer-info__twitter{
+
+            width: 45%;
+            margin: 0;
+        }
+        .footer-info__twitter-link{
+            padding: 0;
+        }
+        .footer-info__widget{
+            width: 70%;
+            .footer-info-title{
+                margin: auto;
+            }
+            img{
+                margin: 10px auto;
+            }
+        }
+    }
+    .footer-copyright{
+            padding: 1em;
+        .footer-copyright-support a,
+        .footer-copyright-author a{
+            border: none;
+        }
+        .footer-copyright-support a:nth-child(2){
+            border-right: 1px solid #555555;
+        }
+        .footer-copyright-author{
+            text-align: end;
+        }
+    }
+
+}
