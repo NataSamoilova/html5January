@@ -16,6 +16,12 @@
         display: none;
     }
     /**/
+    a:active{
+        outline: none;
+    }
+    a:visited{
+        outline: none;
+    }
     .services-block{
       width: 45%;
       margin: 10px 0 0 0;
@@ -26,6 +32,7 @@
     .purchase-block{
       display: block;
       text-align: center;
+      padding: 1em;
       .btn-purchase{
           margin: 3% 0 0 0;
       }
@@ -91,7 +98,8 @@
         background: url(../img/clients-bg.jpg) no-repeat center bottom;
         .clientlogo {
            padding: 0;
-            width: 80px;
+           width: 80px;
+           margin: 0;
            img{
            width: inherit;
           }
@@ -117,6 +125,7 @@
                 display: block;
                 width: 100px;
                 margin: auto;
+                outline: none;
                 }
             .read-more-link:after{
             left: 92px;
