@@ -1,0 +1,68 @@
+@media screen and (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+  .padding-site {
+    padding: 1em;
+  }
+  /**/
+  header {
+    display: none;
+  }
+  .btn-cart {
+    display: none;
+  }
+  form {
+    display: none;
+  }
+  /**/
+  .services-block {
+    width: 45%;
+    margin: 10px 0 0 0;
+  }
+  .printscreen {
+    display: none;
+  }
+  .purchase-block {
+    display: block;
+    text-align: center;
+  }
+  .purchase-block .btn-purchase {
+    margin: 3% 0 0 0;
+  }
+  .projects .projects-gallery {
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+  }
+  .projects .projects-gallery .projects-cards-block {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .videoblock {
+    display: none;
+  }
+  .mobiledevice {
+    justify-content: center;
+    background: url(../img/iphone-small.jpg) no-repeat;
+    background-position: 5% 100%;
+    min-height: 500px;
+  }
+  .mobiledevice .mobiledevice-content {
+    margin: 0;
+    width: 90%;
+    text-align: center;
+  }
+  .mobiledevice .mobiledevice-content .main-txt {
+    text-align: center;
+    font-size: 14px;
+  }
+  .mobiledevice .mobiledevice-content .mobiledevice-list {
+    margin: 0 0 0 40%;
+    font-size: 14px;
+  }
+  .mobiledevice .mobiledevice-content .mobiledevice-list li::before {
+    left: -5px;
+    top: 30%;
+  }
+}
