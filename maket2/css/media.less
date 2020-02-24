@@ -1,18 +1,118 @@
 @media screen and (max-width: 480px){
-     *{
-         box-sizing: border-box;
-     }
+    *{
+        box-sizing: border-box;
+    }
     .padding-site{
       padding: 3em 1em;
     } 
-    /**/
-    .header-menu{
-        display: none;
-    }
     .header-slider{
+        height: 100px;
+    }
+    .header-context{
         display: none;
     }
-    /**/
+    .pagination{
+        display: none;
+    }
+    .header-menu{
+        padding: 1em;
+        .logo{
+            justify-content: flex-start;
+        }
+    }
+    .header-nav{
+        display: block;
+    }
+    .label-burger,
+    .burger-line{
+        display: block;
+    }
+    .nav{
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 100%;
+        bottom: -10px;
+        left: 0;
+        transform: translateY(100%);
+        transition: .5s all;
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        background-color: #7c7272;
+
+    }
+    .header-nav .nav a{
+        display: block;
+        width: 100%;
+        padding: 1em;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+        background-color: #7c7272;
+        outline: none;
+    }
+    .btn-cart{
+        width: 100%;
+        margin: auto;
+        height: 45px;
+        background-color: #7c7272;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+        outline: none;
+    }
+    .btn-cart:hover{
+        opacity: 1;
+        border: 2px solid rgba(26, 23, 23, 0.2);
+    }
+    .btn-cart:active{
+        outline: none;
+    }
+    form{
+        background-color:#7c7272;
+        width: 100%; 
+        border-top: 1px solid rgba(255, 255, 255, .2);
+    }
+    .search-label{
+        margin: 10px auto;
+    }
+    .search-label:hover{
+        opacity: .8;
+      }
+    .search{
+        width: 420px;
+        height: 25px;
+        opacity: 1;
+        left: 0;
+        right: 0;
+        top: 52px;
+        bottom: 0;
+        margin: auto;
+        opacity: 1;
+        color: #ffffff;
+    }
+    .search:focus{
+        width: 420px;
+        opacity: 1;
+        left: 0;
+        right: 0;
+        top: 52px;
+        bottom: 0;
+        margin: auto;
+      }
+
+    #check-menu:checked ~ .nav{
+        min-height: 520px;
+        font-size: 16px;
+        z-index: 2;
+    }
+    #check-menu:checked ~ .line1,
+    #check-menu:checked ~ .line4{
+        display: none;
+    }
+    #check-menu:checked ~ .line2{
+        transform: rotate(45deg);
+    }
+    #check-menu:checked ~ .line3{
+        transform: rotate(-45deg);
+    }
     a:active{
         outline: none;
     }
@@ -142,6 +242,8 @@
             width: 70%;
             .footer-info-title{
                 margin: auto;
+                display: block;
+                width: 100%;
             }
             img{
                 margin: 10px auto;
